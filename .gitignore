@@ -1,0 +1,17 @@
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Python virtual environment
+venv/
+.venv/
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+__pycache__/
+*.pyc
+frontend/dist/

@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+python-multipart
+opencv-python-headless
+numpy
+pillow
+pytest
+httpx
+pytest-asyncio
+passlib
+bcrypt
+python-jose
