@@ -1,5 +1,4 @@
-
-# Local database
+﻿# Local database
 *.db
 *.sqlite
 *.sqlite3
@@ -15,3 +14,4 @@ frontend/node_modules/
 __pycache__/
 *.pyc
 frontend/dist/
+.smartpack_setup_complete.json
