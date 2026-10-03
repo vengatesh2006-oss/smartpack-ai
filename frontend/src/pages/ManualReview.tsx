@@ -5,6 +5,7 @@ const ManualReview: React.FC = () => {
   const [reviews, setReviews] = useState<any[]>([]);
   const [selectedReview, setSelectedReview] = useState<any>(null);
   const [overrideReason, setOverrideReason] = useState('');
+  const [hasReviewed, setHasReviewed] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
@@ -78,8 +79,8 @@ const ManualReview: React.FC = () => {
             <>
               <h2 className="text-xl font-semibold mb-4 text-[#1c1c1e]">Review Details: INSP-{selectedReview.id}</h2>
               <div className="bg-gray-200 h-80 rounded mb-6 flex items-center justify-center border border-gray-300 relative overflow-hidden">
-                {selectedReview.image_url ? (
-                  <img src={selectedReview.image_url} alt="Review Image" className="object-cover w-full h-full" />
+                {selectedReview.image_path || selectedReview.image_url ? (
+                  <img src={selectedReview.image_path || selectedReview.image_url} alt="Review Image" className="object-cover w-full h-full" />
                 ) : (
                   <span className="text-gray-500 font-medium">Image Highlighting Low Confidence Regions</span>
                 )}
@@ -87,16 +88,32 @@ const ManualReview: React.FC = () => {
               
               <div className="grid grid-cols-2 gap-4 mb-6 bg-gray-50 p-4 rounded border border-gray-100">
                 <div>
+                  <p className="text-gray-500 text-sm font-medium">Shipment ID</p>
+                  <p className="font-bold text-gray-900">{selectedReview.shipment_id || 'N/A'}</p>
+                </div>
+                <div>
                   <p className="text-gray-500 text-sm font-medium">Part ID</p>
-                  <p className="font-bold text-gray-900">{selectedReview.part_id}</p>
+                  <p className="font-bold text-gray-900">{selectedReview.part_id || 'N/A'}</p>
                 </div>
                 <div>
                   <p className="text-gray-500 text-sm font-medium">System Confidence</p>
-                  <p className="font-bold text-amber-600">{(selectedReview.confidence*100).toFixed(1)}%</p>
+                  <p className="font-bold text-amber-600">{((selectedReview.confidence || 0)*100).toFixed(1)}%</p>
+                </div>
+                <div>
+                  <p className="text-gray-500 text-sm font-medium">Automated Result</p>
+                  <p className="font-bold text-gray-900">{selectedReview.decision || selectedReview.status || 'N/A'}</p>
                 </div>
                 <div className="col-span-2">
-                  <p className="text-gray-500 text-sm font-medium">Detected Issue / Reason</p>
-                  <p className="font-bold text-amber-600">Human review flagged due to rule thresholds.</p>
+                  <p className="text-gray-500 text-sm font-medium">Image Path</p>
+                  <p className="font-bold text-gray-900 break-all">{selectedReview.image_path || selectedReview.image_url || 'N/A'}</p>
+                </div>
+                <div className="col-span-2">
+                  <p className="text-gray-500 text-sm font-medium">Triggered Rules / Detected Issue</p>
+                  <p className="font-bold text-amber-600">{
+                    (selectedReview.triggered_rules && selectedReview.triggered_rules.length > 0)
+                      ? selectedReview.triggered_rules.join(', ')
+                      : 'Human review flagged due to rule thresholds.'
+                  }</p>
                 </div>
               </div>
 
@@ -112,18 +129,31 @@ const ManualReview: React.FC = () => {
             ></textarea>
           </div>
 
+          <div className="mb-6 flex items-center">
+            <input 
+              type="checkbox" 
+              id="reviewed-evidence"
+              checked={hasReviewed}
+              onChange={(e) => setHasReviewed(e.target.checked)}
+              className="mr-2"
+            />
+            <label htmlFor="reviewed-evidence" className="text-sm text-gray-700 font-medium">
+              I have reviewed the evidence
+            </label>
+          </div>
+
           <div className="flex space-x-4 border-t pt-4">
             <button 
               onClick={() => handleAction('PASS')}
-              disabled={isSubmitting}
-              className="flex-1 bg-green-600 text-white py-3 rounded font-bold hover:bg-green-700 shadow-sm transition-colors"
+              disabled={isSubmitting || !overrideReason.trim() || !hasReviewed}
+              className="flex-1 bg-green-600 text-white py-3 rounded font-bold hover:bg-green-700 shadow-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Override: READY TO DISPATCH
             </button>
             <button 
               onClick={() => handleAction('FAIL')}
-              disabled={isSubmitting}
-              className="flex-1 bg-red-600 text-white py-3 rounded font-bold hover:bg-red-700 shadow-sm transition-colors"
+              disabled={isSubmitting || !overrideReason.trim() || !hasReviewed}
+              className="flex-1 bg-red-600 text-white py-3 rounded font-bold hover:bg-red-700 shadow-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Confirm: DO NOT DISPATCH
             </button>

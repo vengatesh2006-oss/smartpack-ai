@@ -32,17 +32,21 @@ const Dashboard: React.FC = () => {
     daily_stats: []
   };
 
+  const total = safeMetrics?.total_inspections ?? 0;
+  const passed = safeMetrics?.passed ?? 0;
+  const failed = safeMetrics?.failed ?? 0;
+
   const pieData = [
-    { name: 'Ready to Dispatch', value: safeMetrics.passed },
-    { name: 'Do Not Dispatch', value: safeMetrics.failed },
-    { name: 'Human Review', value: Math.max(0, safeMetrics.total_inspections - safeMetrics.passed - safeMetrics.failed) },
+    { name: 'Ready to Dispatch', value: passed },
+    { name: 'Do Not Dispatch', value: failed },
+    { name: 'Human Review', value: Math.max(0, total - passed - failed) },
   ];
 
-  const passRate = safeMetrics.total_inspections > 0 
-    ? ((safeMetrics.passed / safeMetrics.total_inspections) * 100).toFixed(1)
+  const passRate = total > 0 
+    ? ((passed / total) * 100).toFixed(1)
     : '0.0';
 
-  const barData = safeMetrics.daily_stats && safeMetrics.daily_stats.length > 0 ? safeMetrics.daily_stats : [
+  const barData = safeMetrics?.daily_stats?.length > 0 ? safeMetrics.daily_stats : [
     { name: 'Mon', passed: 0, failed: 0 },
     { name: 'Tue', passed: 0, failed: 0 },
     { name: 'Wed', passed: 0, failed: 0 },
@@ -51,6 +55,8 @@ const Dashboard: React.FC = () => {
     { name: 'Sat', passed: 0, failed: 0 },
     { name: 'Sun', passed: 0, failed: 0 },
   ];
+
+  const hasPieData = pieData.some(d => d.value > 0);
 
   return (
     <div className="p-6 bg-gray-50 min-h-screen">
@@ -77,27 +83,33 @@ const Dashboard: React.FC = () => {
         <div className="bg-white p-6 rounded-lg shadow border border-gray-100">
           <h2 className="text-xl font-semibold mb-4 text-gray-700">Status Distribution</h2>
           <div className="h-72">
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart>
-                <Pie
-                  data={pieData}
-                  cx="50%"
-                  cy="50%"
-                  innerRadius={60}
-                  outerRadius={100}
-                  fill="#8884d8"
-                  paddingAngle={5}
-                  dataKey="value"
-                  label
-                >
-                  {pieData.map((_entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip />
-                <Legend />
-              </PieChart>
-            </ResponsiveContainer>
+            {hasPieData ? (
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={pieData}
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={60}
+                    outerRadius={100}
+                    fill="#8884d8"
+                    paddingAngle={5}
+                    dataKey="value"
+                    label
+                  >
+                    {pieData.map((_entry, index) => (
+                      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                    ))}
+                  </Pie>
+                  <Tooltip />
+                  <Legend />
+                </PieChart>
+              </ResponsiveContainer>
+            ) : (
+              <div className="flex justify-center items-center h-full text-gray-400">
+                No data available
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -105,7 +117,7 @@ const Dashboard: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="bg-white p-6 rounded-lg shadow border border-gray-100 text-center">
           <p className="text-gray-500 text-sm font-medium uppercase tracking-wide">Total Inspections</p>
-          <p className="text-3xl font-bold text-gray-900 mt-2">{safeMetrics.total_inspections}</p>
+          <p className="text-3xl font-bold text-gray-900 mt-2">{total}</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow border border-gray-100 text-center">
           <p className="text-gray-500 text-sm font-medium uppercase tracking-wide">Ready to Dispatch Rate</p>
@@ -113,7 +125,7 @@ const Dashboard: React.FC = () => {
         </div>
         <div className="bg-white p-6 rounded-lg shadow border border-gray-100 text-center">
           <p className="text-gray-500 text-sm font-medium uppercase tracking-wide">Pending Reviews</p>
-          <p className="text-3xl font-bold text-amber-500 mt-2">{Math.max(0, safeMetrics.total_inspections - safeMetrics.passed - safeMetrics.failed)}</p>
+          <p className="text-3xl font-bold text-amber-500 mt-2">{Math.max(0, total - passed - failed)}</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow border border-gray-100 text-center">
           <p className="text-gray-500 text-sm font-medium uppercase tracking-wide">Avg Processing Time</p>

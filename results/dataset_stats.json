@@ -1,0 +1,113 @@
+{
+  "total_images": 125,
+  "confusion_matrix": {
+    "tp": 60,
+    "tn": 20,
+    "fp": 0,
+    "fn": 0
+  },
+  "manual_reviews": 45,
+  "ece": 0.19599999999999956,
+  "class_stats": {
+    "blurry": {
+      "total": 15,
+      "pred_outcomes": {
+        "MANUAL_REVIEW": 15
+      },
+      "automatic": 0,
+      "manual": 15,
+      "correct": 15,
+      "incorrect": 0
+    },
+    "correct": {
+      "total": 20,
+      "pred_outcomes": {
+        "PASS": 20
+      },
+      "automatic": 20,
+      "manual": 0,
+      "correct": 20,
+      "incorrect": 0
+    },
+    "missing_cover": {
+      "total": 15,
+      "pred_outcomes": {
+        "FAIL": 15
+      },
+      "automatic": 15,
+      "manual": 0,
+      "correct": 15,
+      "incorrect": 0
+    },
+    "missing_padding": {
+      "total": 15,
+      "pred_outcomes": {
+        "FAIL": 15
+      },
+      "automatic": 15,
+      "manual": 0,
+      "correct": 15,
+      "incorrect": 0
+    },
+    "occluded": {
+      "total": 15,
+      "pred_outcomes": {
+        "MANUAL_REVIEW": 15
+      },
+      "automatic": 0,
+      "manual": 15,
+      "correct": 15,
+      "incorrect": 0
+    },
+    "visible_damage": {
+      "total": 15,
+      "pred_outcomes": {
+        "FAIL": 15
+      },
+      "automatic": 15,
+      "manual": 0,
+      "correct": 15,
+      "incorrect": 0
+    },
+    "wrong_box": {
+      "total": 15,
+      "pred_outcomes": {
+        "FAIL": 15
+      },
+      "automatic": 15,
+      "manual": 0,
+      "correct": 15,
+      "incorrect": 0
+    },
+    "wrong_orientation": {
+      "total": 15,
+      "pred_outcomes": {
+        "MANUAL_REVIEW": 15
+      },
+      "automatic": 0,
+      "manual": 15,
+      "correct": 15,
+      "incorrect": 0
+    }
+  },
+  "buckets": {
+    "Low (0.00-0.69)": {
+      "count": 30,
+      "correct": 30,
+      "manual": 30,
+      "total_conf": 15.0
+    },
+    "Medium (0.70-0.84)": {
+      "count": 0,
+      "correct": 0,
+      "manual": 0,
+      "total_conf": 0.0
+    },
+    "High (0.85-1.00)": {
+      "count": 95,
+      "correct": 95,
+      "manual": 15,
+      "total_conf": 85.50000000000006
+    }
+  }
+}

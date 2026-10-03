@@ -46,6 +46,33 @@ export interface VerifyResponse {
 }
 
 export const verifyPacking = async (partId: string, image: File): Promise<any> => {
+  if (!navigator.onLine) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(image);
+      reader.onload = () => {
+        const queue = JSON.parse(localStorage.getItem('offline_verification_queue') || '[]');
+        const id = crypto.randomUUID();
+        queue.push({
+          id,
+          partId,
+          image: reader.result, // base64
+          timestamp: Date.now()
+        });
+        localStorage.setItem('offline_verification_queue', JSON.stringify(queue));
+        resolve({
+          id,
+          status: 'Review', // Default to review for offline
+          confidence: 0,
+          results: [],
+          offline: true,
+          message: 'Saved offline. Will sync when online.'
+        });
+      };
+      reader.onerror = error => reject(error);
+    });
+  }
+
   const formData = new FormData();
   formData.append('file', image);
   
@@ -56,6 +83,26 @@ export const verifyPacking = async (partId: string, image: File): Promise<any> =
   });
   return response.data;
 };
+
+// Simple sync when coming back online
+if (typeof window !== 'undefined') {
+  window.addEventListener('online', async () => {
+    const queue = JSON.parse(localStorage.getItem('offline_verification_queue') || '[]');
+    if (queue.length > 0) {
+      for (const req of queue) {
+        try {
+          const res = await fetch(req.image);
+          const blob = await res.blob();
+          const file = new File([blob], "offline_image.jpg", { type: "image/jpeg" });
+          await verifyPacking(req.partId, file);
+        } catch (e) {
+          console.error("Failed to sync offline request", e);
+        }
+      }
+      localStorage.setItem('offline_verification_queue', '[]');
+    }
+  });
+}
 
 export const getInspections = async () => {
   const response = await api.get('/inspections');

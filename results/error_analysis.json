@@ -1,0 +1,56 @@
+{
+  "blurry": {
+    "total": 15,
+    "failed_or_review": 15,
+    "reasons": [
+      "Image quality (0.50) is below acceptable threshold."
+    ]
+  },
+  "correct": {
+    "total": 20,
+    "failed_or_review": 0,
+    "reasons": []
+  },
+  "missing_cover": {
+    "total": 15,
+    "failed_or_review": 15,
+    "reasons": [
+      "High severity rule failures: Cover Match."
+    ]
+  },
+  "missing_padding": {
+    "total": 15,
+    "failed_or_review": 15,
+    "reasons": [
+      "High severity rule failures: Padding Match."
+    ]
+  },
+  "occluded": {
+    "total": 15,
+    "failed_or_review": 15,
+    "reasons": [
+      "High severity failures with low confidence. Manual review required."
+    ]
+  },
+  "visible_damage": {
+    "total": 15,
+    "failed_or_review": 15,
+    "reasons": [
+      "Critical rule failures: No Visible Damage."
+    ]
+  },
+  "wrong_box": {
+    "total": 15,
+    "failed_or_review": 15,
+    "reasons": [
+      "High severity rule failures: Box Match."
+    ]
+  },
+  "wrong_orientation": {
+    "total": 15,
+    "failed_or_review": 15,
+    "reasons": [
+      "Medium severity rule failures: Orientation Match."
+    ]
+  }
+}

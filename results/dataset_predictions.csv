@@ -1,0 +1,126 @@
+image_path,ground_truth_label,expected_state,predicted_state,confidence,is_manual_review,reason,is_correct
+dataset\images\blurry\blurry_095.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_096.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_097.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_098.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_099.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_100.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_101.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_102.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_103.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_104.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_105.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_106.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_107.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_108.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\blurry\blurry_109.jpg,blurry,FAIL,MANUAL_REVIEW,0.5,True,Image quality (0.50) is below acceptable threshold.,True
+dataset\images\correct\correct_000.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_001.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_002.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_003.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_004.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_005.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_006.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_007.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_008.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_009.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_010.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_011.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_012.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_013.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_014.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_015.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_016.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_017.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_018.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\correct\correct_019.jpg,correct,PASS,PASS,0.9,False,All rules passed with sufficient confidence.,True
+dataset\images\missing_cover\missing_cover_065.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_066.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_067.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_068.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_069.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_070.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_071.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_072.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_073.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_074.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_075.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_076.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_077.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_078.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_cover\missing_cover_079.jpg,missing_cover,FAIL,FAIL,0.9,False,High severity rule failures: Cover Match.,True
+dataset\images\missing_padding\missing_padding_020.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_021.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_022.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_023.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_024.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_025.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_026.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_027.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_028.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_029.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_030.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_031.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_032.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_033.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\missing_padding\missing_padding_034.jpg,missing_padding,FAIL,FAIL,0.9,False,High severity rule failures: Padding Match.,True
+dataset\images\occluded\occluded_110.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_111.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_112.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_113.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_114.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_115.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_116.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_117.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_118.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_119.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_120.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_121.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_122.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_123.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\occluded\occluded_124.jpg,occluded,FAIL,MANUAL_REVIEW,0.5,True,High severity failures with low confidence. Manual review required.,True
+dataset\images\visible_damage\visible_damage_080.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_081.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_082.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_083.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_084.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_085.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_086.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_087.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_088.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_089.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_090.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_091.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_092.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_093.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\visible_damage\visible_damage_094.jpg,visible_damage,FAIL,FAIL,0.9,False,Critical rule failures: No Visible Damage.,True
+dataset\images\wrong_box\wrong_box_050.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_051.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_052.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_053.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_054.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_055.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_056.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_057.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_058.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_059.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_060.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_061.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_062.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_063.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_box\wrong_box_064.jpg,wrong_box,FAIL,FAIL,0.9,False,High severity rule failures: Box Match.,True
+dataset\images\wrong_orientation\wrong_orientation_035.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_036.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_037.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_038.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_039.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_040.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_041.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_042.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_043.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_044.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_045.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_046.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_047.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_048.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True
+dataset\images\wrong_orientation\wrong_orientation_049.jpg,wrong_orientation,FAIL,MANUAL_REVIEW,0.9,True,Medium severity rule failures: Orientation Match.,True

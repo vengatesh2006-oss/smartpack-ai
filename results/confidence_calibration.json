@@ -1,0 +1,1152 @@
+{
+  "total_samples": 125,
+  "ece": 0.19599999999999956,
+  "buckets": {
+    "Low Confidence (0.00-0.69)": {
+      "count": 30,
+      "correct": 30,
+      "total_conf": 15.0,
+      "accuracy": 1.0,
+      "avg_confidence": 0.5
+    },
+    "Medium Confidence (0.70-0.84)": {
+      "count": 0,
+      "correct": 0,
+      "total_conf": 0.0
+    },
+    "High Confidence (0.85-1.00)": {
+      "count": 95,
+      "correct": 95,
+      "total_conf": 85.50000000000006,
+      "accuracy": 1.0,
+      "avg_confidence": 0.9000000000000006
+    }
+  },
+  "results": [
+    {
+      "filename": "blurry_095.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_096.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_097.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_098.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_099.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_100.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_101.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_102.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_103.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_104.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_105.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_106.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_107.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_108.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "blurry_109.jpg",
+      "category": "blurry",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "Image quality (0.50) is below acceptable threshold."
+    },
+    {
+      "filename": "correct_000.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_001.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_002.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_003.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_004.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_005.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_006.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_007.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_008.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_009.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_010.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_011.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_012.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_013.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_014.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_015.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_016.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_017.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_018.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "correct_019.jpg",
+      "category": "correct",
+      "predicted": "PASS",
+      "expected": "PASS",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "All rules passed with sufficient confidence."
+    },
+    {
+      "filename": "missing_cover_065.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_066.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_067.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_068.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_069.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_070.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_071.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_072.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_073.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_074.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_075.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_076.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_077.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_078.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_cover_079.jpg",
+      "category": "missing_cover",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Cover Match."
+    },
+    {
+      "filename": "missing_padding_020.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_021.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_022.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_023.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_024.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_025.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_026.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_027.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_028.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_029.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_030.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_031.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_032.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_033.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "missing_padding_034.jpg",
+      "category": "missing_padding",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Padding Match."
+    },
+    {
+      "filename": "occluded_110.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_111.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_112.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_113.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_114.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_115.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_116.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_117.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_118.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_119.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_120.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_121.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_122.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_123.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "occluded_124.jpg",
+      "category": "occluded",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.5,
+      "correct": true,
+      "reason": "High severity failures with low confidence. Manual review required."
+    },
+    {
+      "filename": "visible_damage_080.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_081.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_082.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_083.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_084.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_085.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_086.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_087.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_088.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_089.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_090.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_091.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_092.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_093.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "visible_damage_094.jpg",
+      "category": "visible_damage",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Critical rule failures: No Visible Damage."
+    },
+    {
+      "filename": "wrong_box_050.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_051.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_052.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_053.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_054.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_055.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_056.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_057.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_058.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_059.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_060.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_061.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_062.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_063.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_box_064.jpg",
+      "category": "wrong_box",
+      "predicted": "FAIL",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "High severity rule failures: Box Match."
+    },
+    {
+      "filename": "wrong_orientation_035.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_036.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_037.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_038.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_039.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_040.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_041.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_042.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_043.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_044.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_045.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_046.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_047.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_048.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    },
+    {
+      "filename": "wrong_orientation_049.jpg",
+      "category": "wrong_orientation",
+      "predicted": "MANUAL_REVIEW",
+      "expected": "FAIL",
+      "confidence": 0.9,
+      "correct": true,
+      "reason": "Medium severity rule failures: Orientation Match."
+    }
+  ]
+}

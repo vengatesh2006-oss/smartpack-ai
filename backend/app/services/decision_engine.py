@@ -22,9 +22,10 @@ def make_decision(rule_results: list[dict], visual_confidence: float, image_qual
             if rule.get("rule_name") == "Part Detection":
                 unknown_part = True
             
-            if rule["severity"] == "critical":
+            severity = rule.get("severity", "").lower()
+            if severity == "critical":
                 critical_failures.append(rule["rule_name"])
-            elif rule["severity"] == "high":
+            elif severity == "high":
                 high_failures.append(rule["rule_name"])
             else:
                 medium_failures.append(rule["rule_name"])

@@ -1,0 +1,38 @@
+{
+  "-0.3": {
+    "total": 125,
+    "pass": 0,
+    "fail": 0,
+    "manual_review": 125
+  },
+  "-0.2": {
+    "total": 125,
+    "pass": 0,
+    "fail": 0,
+    "manual_review": 125
+  },
+  "-0.1": {
+    "total": 125,
+    "pass": 0,
+    "fail": 0,
+    "manual_review": 125
+  },
+  "0.0": {
+    "total": 125,
+    "pass": 0,
+    "fail": 0,
+    "manual_review": 125
+  },
+  "0.1": {
+    "total": 125,
+    "pass": 0,
+    "fail": 0,
+    "manual_review": 125
+  },
+  "0.2": {
+    "total": 125,
+    "pass": 0,
+    "fail": 0,
+    "manual_review": 125
+  }
+}
