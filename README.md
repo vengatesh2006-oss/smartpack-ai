@@ -1,39 +1,90 @@
 # SmartPack AI
 
-Automotive Parts Packing Quality Verification System
+## 1. Project Overview
+SmartPack AI is an end-to-end academic prototype for automotive parts packing-quality verification. It verifies packaging at the dispatch station to ensure compliance before shipping.
 
-## Overview
-SmartPack AI is an end-to-end packing-quality verification system for an automotive parts warehouse. It prevents dispatch errors by verifying packaging using a simulated visual-verification engine, rule engine, and decision logic.
+## 2. Problem Statement
+Incorrectly packed automotive parts (e.g., missing padding, wrong orientation, incorrect boxes) lead to transit damage, financial loss, and delays. SmartPack AI addresses this by forcing a strict quality-verification pipeline at the point of dispatch.
 
-## Features
-- **Visual Verification**: Simulates AI computer vision to detect box types, padding, orientation, and protective covers.
-- **Rule Engine**: Evaluates expected vs. observed values based on strict automotive packaging constraints.
-- **Decision Engine**: Automatically assigns PASS, FAIL, or MANUAL REVIEW based on confidence thresholds and critical rules.
-- **Store-and-Forward**: Queues inspections via IndexedDB when the network is offline and synchronizes them later.
-- **Sensor Fallbacks**: Provides manual workflows if the camera or weight sensor fails.
-- **Manager Dashboard**: Visualizes detection rates, false positive rates, systematic errors, and damage outcomes.
+## 3. Architecture
+The system consists of:
+- **Frontend**: A React/Vite web application mimicking an industrial operator dashboard.
+- **Backend**: A FastAPI server handling REST API routing, business logic, and database transactions.
+- **Engines**: Independent CV `image_verifier`, `rule_engine`, and `decision_engine` orchestrating quality checks.
+- **Database**: A local SQLite database managed via SQLAlchemy.
 
-## Getting Started
+## 4. Technology Stack
+- **Frontend**: React, TypeScript, TailwindCSS, Vite, Recharts, Axios
+- **Backend**: Python, FastAPI, Uvicorn, SQLAlchemy, SQLite, OpenCV, Numpy
+- **Testing**: Pytest, Httpx
 
-### Prerequisites
-- Python 3.11+
-- Node.js & npm
+## 5. Verification Pipeline
+1. **Dispatcher** inputs `part_id`, `shipment_id`, and captures an image.
+2. **Backend API** parses part metadata and routes the image bytes to OpenCV.
+3. **Computer Vision** extracts bounding colours, contours, and laplacian variance.
+4. **Rule Engine** evaluates strict geometric and padding compliance against part constraints.
+5. **Decision Engine** synthesizes visual confidence and rule passes to yield a dispatch decision.
 
-### One-Click Startup (Windows)
-1. Open the project root.
-2. Double-click `START_SMARTPACK.bat`
-3. Wait for the browser to open at `http://localhost:5173`.
+## 6. PASS / FAIL / MANUAL REVIEW
+- **PASS**: All rules met, and AI confidence is high (`>0.85`).
+- **FAIL**: A critical rule failed, overriding AI confidence.
+- **MANUAL REVIEW**: High uncertainty (blur, occlusion, unknown parts) safely aborts automation, routing the inspection to a Manager dashboard for human arbitration.
 
-### Demo Credentials
-- **Dispatcher**: `dispatcher` / `dispatcher123`
-- **Manager**: `manager` / `manager123`
+## 7. Dataset
+The verification is evaluated against a fully synthetic, 125-image simulated dataset located in `dataset/images/`, consisting of geometric primitives replicating mechanical parts in boxes. 
 
-### Scripts
-- `START_SMARTPACK.bat`: Start application
-- `STOP_SMARTPACK.bat`: Kill processes
-- `RESET_SMARTPACK.bat`: Wipe database and test images
-- `RUN_TESTS.bat`: Run unit tests and edge case harness
-- `RUN_EXPERIMENT.bat`: Calculate system metrics
+## 8. Validation Results
+- 100% automatic-decision accuracy on 80 automatically resolved synthetic cases, with 45 of 125 cases routed to MANUAL REVIEW.
+- Model Expected Calibration Error (ECE): `0.1960`.
 
-## Limitations & Ethics
-Please refer to `docs/limitations.md` and `docs/ethical_dataset.md` regarding the use of prototype computer vision heuristics and non-identifiable project-created datasets.
+## 9. Testing
+The system utilizes unit tests, edge-case harnesses, and dataset experiments.
+For full details, see: [TESTING.md](docs/TESTING.md).
+
+## 10. API Reference
+The API consists of 22 endpoints governing auth, parts, rules, metrics, and verifications.
+For the complete API mapping, see: [API.md](docs/API.md).
+
+## 11. Database Schema
+The system utilizes 8 relational SQLite models.
+For the complete schema fields, see: [DATABASE_SCHEMA.md](docs/DATABASE_SCHEMA.md).
+
+## 12. Error Handling
+The application relies on UI state mapping, Axios interceptors, store-and-forward `localStorage`, and backend HTTP validation. A global React Error Boundary is a planned addition.
+For full details, see: [ERROR_HANDLING.md](docs/ERROR_HANDLING.md).
+
+## 13. Installation
+Ensure Python 3.11+ and Node.js are installed.
+The orchestrator automates installation upon first launch.
+
+## 14. Running the application
+Run the startup orchestrator:
+```bash
+START_SMARTPACK.bat
+```
+This efficiently triggers environment setup if needed, polls backend health, and opens the frontend at `http://localhost:5173`.
+To close, press `Ctrl+C` in the terminal, or use `STOP_SMARTPACK.bat`.
+
+## 15. Experiment Scripts
+- `RUN_EXPERIMENT.bat`: Computes overarching precision/recall metrics.
+- `RUN_TESTS.bat`: Fires Pytest and the synthetic end-to-end harness.
+- `RESET_SMARTPACK.bat`: Wipes local DB and generated dataset.
+
+## 16. Limitations
+- The CV is currently built on static pixel-heuristics (OpenCV), not deep learning.
+- Synthetic datasets do not perfectly model real-world factory lighting constraints.
+
+## 17. Future Work
+- Migration to robust YOLO/ResNet deep learning CV pipelines.
+- Implementation of a global React `<ErrorBoundary>`.
+- PostgreSQL database migration.
+
+## 18. Documentation Links
+- [API Reference](docs/API.md)
+- [Database Schema](docs/DATABASE_SCHEMA.md)
+- [Testing Architecture](docs/TESTING.md)
+- [Error Handling](docs/ERROR_HANDLING.md)
+- [Image Verification](docs/IMAGE_VERIFICATION.md)
+- [Confidence Calibration](docs/CONFIDENCE_CALIBRATION.md)
+- [Error Analysis](docs/ERROR_ANALYSIS.md)
+- [Dataset Validation](docs/DATASET_VALIDATION_REPORT.md)

@@ -6,6 +6,8 @@ def make_decision(rule_results: list[dict], visual_confidence: float, image_qual
     MANUAL_REVIEW_CONFIDENCE_THRESHOLD = 0.85
     LOW_QUALITY_THRESHOLD = 0.70
 
+    # Why: Poor image quality (blur/glare) means the CV engine might hallucinate features.
+    # Rather than falsely passing or failing, we safely escalate to a human.
     if image_quality < LOW_QUALITY_THRESHOLD:
         return {
             "decision": "MANUAL_REVIEW",
@@ -30,12 +32,15 @@ def make_decision(rule_results: list[dict], visual_confidence: float, image_qual
             else:
                 medium_failures.append(rule["rule_name"])
 
+    # Why: If the part is totally unrecognized, we cannot safely apply rules. A human must verify.
     if unknown_part:
         return {
             "decision": "MANUAL_REVIEW",
             "explanation": "Unknown part detected. Manual review required."
         }
 
+    # Why: AI/Rule conflict handling. If the AI detects a critical safety violation (e.g. no box),
+    # it immediately FAILS the inspection regardless of confidence, preventing a dangerous dispatch.
     if critical_failures:
         return {
             "decision": "FAIL",
@@ -43,6 +48,7 @@ def make_decision(rule_results: list[dict], visual_confidence: float, image_qual
         }
 
     if high_failures:
+        # Why: High-severity failures in ambiguous visual conditions require human arbitration.
         if visual_confidence < MANUAL_REVIEW_CONFIDENCE_THRESHOLD:
             return {
                 "decision": "MANUAL_REVIEW",
@@ -59,6 +65,7 @@ def make_decision(rule_results: list[dict], visual_confidence: float, image_qual
             "explanation": f"Medium severity rule failures: {', '.join(medium_failures)}."
         }
 
+    # Why: Even if all rules passed, low CV confidence implies the model is guessing. Escalate.
     if visual_confidence < MANUAL_REVIEW_CONFIDENCE_THRESHOLD:
         return {
             "decision": "MANUAL_REVIEW",
